@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: goserver-service
+spec:
+  selector:
+    app: goserver #vai pegar todos os pods que o matchLabel estiver com o valor goserver
+  type: ClusterIP
+  ports:
+    - name: goserver-service
+      port: 80
+      targetPort: 8000 #quando acessar a porta 80, vai ser redirecionado para a porta 8000 do pod
+      protocol: TCP
