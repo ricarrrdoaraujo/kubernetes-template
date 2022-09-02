@@ -1,0 +1,6 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: goserver-config
+data:
+  members: "Quetzalcoatlus, Velociraptor Mongoliensis, Dromaeosaurus Albertensis, Caiuajara"
